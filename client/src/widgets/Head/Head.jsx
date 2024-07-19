@@ -43,7 +43,7 @@ const Head = () => {
 
               <div className={style.head__clients__text}>
                 <h4>143+</h4>
-                <p>Работодателей домеряют нам</p>
+                <p>Работодателей доверяют нам</p>
               </div>
             </div>
 
