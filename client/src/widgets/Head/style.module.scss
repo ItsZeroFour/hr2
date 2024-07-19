@@ -1,0 +1,180 @@
+.head {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: -10%;
+    top: 10%;
+
+    width: 900px;
+    height: 900px;
+    background: var(--color-orange);
+    opacity: 0.12;
+    filter: blur(190px);
+
+    border-radius: 50%;
+
+    z-index: -1;
+  }
+}
+
+.head__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 104px;
+    font-family: "Montserrat-bd", sans-serif;
+    font-weight: 700;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--color-gray);
+
+    span {
+      color: var(--color-orange);
+    }
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      left: 95%;
+      top: 40%;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: url("../../../public/icons/star.svg");
+      background-repeat: no-repeat;
+
+      @media (max-width: 1119px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      left: 85%;
+      top: 70%;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: url("../../../public/icons/star-sm.svg");
+      background-repeat: no-repeat;
+
+      @media (max-width: 1119px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 64px;
+    }
+
+    @media (max-width: 706px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 535px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 365px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.head__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  @media (max-width: 792px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.head__content > p {
+  font-size: 14px;
+  width: 520px;
+  line-height: 120%;
+
+  @media (max-width: 546px) {
+    width: 100%;
+  }
+}
+
+.head__clients {
+  display: flex;
+
+  ul {
+    display: flex;
+    position: relative;
+    width: 220px;
+
+    li {
+      position: absolute;
+
+      &:nth-child(1) {
+        left: 17%;
+        z-index: 1;
+      }
+
+      &:nth-child(2) {
+        left: 34%;
+        z-index: 2;
+      }
+
+      &:nth-child(3) {
+        left: 51%;
+        z-index: 3;
+      }
+
+      &:nth-child(4) {
+        left: 68%;
+        z-index: 4;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.head__clients__text {
+  width: 200px;
+
+  h4 {
+    font-size: 24px;
+    font-family: "Montserrat-bd", sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.head__wrapper > img {
+  margin-top: 50px;
+  border-radius: 30px;
+  @media (max-width: 1119px) {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 526px) {
+    height: 300px;
+  }
+}

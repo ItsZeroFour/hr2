@@ -1,0 +1,130 @@
+.advantages {
+  margin-top: 60px;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  ul {
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 35px;
+      border: 1px solid var(--color-white);
+      border-radius: 60px;
+
+      p {
+        width: 454px;
+        font-size: 14px;
+        line-height: 120%;
+
+        @media (max-width: 660px) {
+          width: 100%;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 12px;
+        }
+      }
+
+      h3 {
+        font-size: 28px;
+        font-family: "Montserrat-eb", sans-serif;
+        font-weight: 800;
+
+        @media (max-width: 1055px) {
+          font-size: 24px;
+        }
+
+        @media (max-width: 390px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 990px) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+.advantages__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    width: 700px;
+    font-size: 48px;
+    font-family: "Montserrat-bd", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+
+    span {
+      color: var(--color-orange);
+    }
+
+    @media (max-width: 720px) {
+      width: 100%;
+    }
+
+    @media (max-width: 453px) {
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 873px) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+.advantages__top__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  width: 375px;
+
+  p {
+    line-height: 120%;
+  }
+
+  a {
+    padding: 15px 45px;
+    border: 1px solid var(--color-white);
+    border-radius: 30px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background: var(--color-white);
+      color: var(--color-black);
+    }
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}
