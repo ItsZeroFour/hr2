@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const WhoWe = () => {
   return (
-    <section className={style.whowe}>
+    <section className={style.whowe} id="about">
       <div className="container">
         <div className={style.whowe__wrapper}>
           <h2>

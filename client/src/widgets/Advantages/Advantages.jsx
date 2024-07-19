@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Advantages = () => {
   return (
-    <section className={style.advantages}>
+    <section className={style.advantages} id="our-projects">
       <div className="container">
         <div className={style.advantages__wrapper}>
           <div className={style.advantages__top}>

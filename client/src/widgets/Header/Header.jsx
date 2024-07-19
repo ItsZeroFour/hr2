@@ -28,7 +28,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <Link href="#contatcs">Оставить заявку</Link>
+          <Link href="#contacts">Оставить заявку</Link>
         </div>
       </div>
     </footer>
